@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <!-- meta é ligado a configuração do site, não visuais. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- config para poder abrir o site em dispositivos móveis-->
-    <title>home</title>
+    <title>Notas</title>
     <link rel="stylesheet" href="notas.css">
-
-    <style>
-        body {
-            background-color: rgb(196, 196, 194);
-        }
-        h1 {
-            color: rgb(255, 3, 3);
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .descricao {
-            font-size: 32px;
-            color: rgb(179, 52, 1);
-        }
-    </style>
 </head>
-<body>
-    <h1>Meu primeiro titulo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aut illo nulla impedit cumque harum incidunt. Nisi molestiae deleniti fugit? Repellendus nam eius quam accusamus vero nemo nesciunt sequi laudantium.</p>
 
-    <span class="descricao">Segue os exemplos acima</span>
-    <!--serve em situações de um elemento que não tem nenhum tipo de estilo/padrão atribuido-->
+<body>
+
+    <form class="container" id="calculadora">
+        <h1>Calculadora de notas</h1>
+
+        <label for="nota1">Nota 1</label>
+        <input type="number" id="nota1" />
+
+        <label for="nota2">Nota 2</label>
+        <input type="number" id="nota2" />
+
+        <label for="nota3">Nota 3</label>
+        <input type="number" id="nota3" />
+
+        <label for="nota4">Nota 4</label>
+        <input type="number" id="nota4" />
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
