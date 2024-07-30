@@ -20,5 +20,3 @@ display.addEventListener('submit', e => {
  console.log('entrei aqui')
 })
  */
-
-
