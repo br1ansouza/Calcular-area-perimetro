@@ -3,20 +3,19 @@ function calcularMediaNotas(notaUm, notaDois, notaTres, notaQuatro) {
     return mediaNotas
 }
 
-document.getElementById('calculadora').addEventListener('submit', function (event) {
-     event.preventDefault()
-     var nota1 = document.getElementById('nota1').value
-     var nota2 = document.getElementById('nota2').value
-     var nota3 = document.getElementById('nota3').value
-     var nota4 = document.getElementById('nota4').value
-})
 
+function executarFormulario(event) {
 
-/*
-const display = document.getElementById('calculadora')
+    event.preventDefault() // previne que a tela faça um refresh
 
-display.addEventListener('submit', e => {
-    e.preventDefault()
- console.log('entrei aqui')
-})
- */
+    var nota1 = parseFloat(document.getElementById('nota1').value)
+    var nota2 = parseFloat(document.getElementById('nota2').value)
+    var nota3 = parseFloat(document.getElementById('nota3').value)
+    var nota4 = parseFloat(document.getElementById('nota4').value)
+
+    alert(calcularMediaNotas(nota1, nota2, nota3, nota4).toFixed(2))
+}
+
+document // document é o arquivo que recebe o script 
+    .getElementById('calculadora') // pegar o elemento com id calculadora
+    .addEventListener('submit', executarFormulario)
