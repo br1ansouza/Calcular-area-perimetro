@@ -20,7 +20,6 @@ function processarFormulario(event) {
         document.getElementById('resultado').innerText = "Por favor, insira valores válidos para todos os lados.";
         return;
 
-
       }
       var perimetro = calcularPerimetroTriangulo(ladoA, ladoB, ladoC);
   var area = calcularAreaTriangulo(ladoA, ladoB, ladoC);
@@ -33,6 +32,6 @@ function processarFormulario(event) {
 document
 .getElementById('form-perimetro-triangulo')
 .addEventListener('submit', processarFormulario)
-document
+//document
 //.getElementById('calcular-area')
 //.addEventListener('click', processarFormulario);
